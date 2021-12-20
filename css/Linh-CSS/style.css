@@ -238,7 +238,6 @@ a {
 
 /* =============================footer=================================== */
 .footer {
-    background: url('/img/bg-footer.png') center no-repeat;
     background-size: cover;
     color: #fff;
     padding-top: 50px;
