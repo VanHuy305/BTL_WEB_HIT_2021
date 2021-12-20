@@ -306,6 +306,9 @@ a {
 
 /* ========================RESPONSIVE==================== */
 @media screen and (max-width: 992px) {
+    .hidden-nav-menu {
+        display: none;
+      }
     .header {
         background-color: #2e4f85;
         position: static;
