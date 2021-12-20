@@ -569,6 +569,7 @@ function changeNewsLatestList(checkChange) {
       prevNewsLatestBtn.style.display = 'inline-block';
     }
   }
+  
   if(checkChange === -1) {
     let newsItem = '';
     let newsList = [];
