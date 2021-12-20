@@ -134,12 +134,12 @@ body {
   left: 0.5px;
 }
 .wowbook-gutter-shadow-left {
-  background: url(../../img/huy-img/menu-img/gutter_shadow_left.png) right top
+  background: url(../../img/Huy-img/menu-img/gutter_shadow_left.png) right top
     repeat-y;
   width: 70px;
 }
 .wowbook-gutter-shadow-right {
-  background: url(../../img/huy-img/menu-img/gutter_shadow_right.png) right top
+  background: url(../../img/Huy-img/menu-img/gutter_shadow_right.png) right top
     repeat-y;
   width: 40.5px;
 }
