@@ -324,7 +324,6 @@ a {
     .footer .address span {
         font-size: 16px;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -335,5 +334,4 @@ a {
     .footer li {
         text-align: left !important;
     }
-
 }

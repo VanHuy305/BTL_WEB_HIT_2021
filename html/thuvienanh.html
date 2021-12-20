@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Thư Viện Ảnh</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
@@ -19,12 +19,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
     
+    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/asset/javascript/animate.min.css">
     
       <link rel="stylesheet" href="../css/Linh-CSS/style.css" />
 </head>
 <body>
-
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -208,7 +208,7 @@
         function show(img){
             let showImage = $('img.imageShow');
             var filename = img.src.replace(/^.*[\\\/]/, '');
-            showImage[0].src = '/img/thu_vien_anh/'+filename;
+            showImage[0].src = '../img/thu_vien_anh/'+filename;
             let showBoard = $('#showBoard');
             showBoard.show();
         }
