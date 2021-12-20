@@ -7,6 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 ul {
@@ -17,6 +18,10 @@ ul {
 
 a {
     text-decoration: none !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
 }
 
 /* =============================messager-btn============= */
@@ -236,9 +241,402 @@ a {
     }
 }
 
+/* ============================SEAFOOD WRAPPER================================= */
+.wrapper-seafood,
+.wrapper-dishes,
+.wrapper-videos,
+.wrapper-news,
+.wrapper-introduce,
+.wrapper-comments,
+.wrapper-goodwill {
+    padding: 50px 0;
+}
+
+.wrapper-seafood .title,
+.wrapper-dishes .card-body .card-title,
+.wrapper-videos .title,
+.wrapper-news .title,
+.wrapper-introduce .title,
+.wrapper-comments .title,
+.wrapper-goodwill .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #b52026;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.wrapper-seafood .row {
+    margin: 0;
+}
+
+.wrapper-seafood .title::after,
+.wrapper-dishes .card-body .card-title::after,
+.wrapper-videos .title::after,
+.wrapper-news .title::after,
+.wrapper-introduce .title::after,
+.wrapper-comments .title::after,
+.wrapper-goodwill .title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    border-bottom: 2px solid #b52026;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper-seafood .img-seafood {
+    padding: 0 !important;
+}
+
+.wrapper-seafood .img-seafood img,
+.wrapper-banner .voucher img,
+.wrapper-comments .img-user img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.card-title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* =============================WRAPPER DISHES============================= */
+.wrapper-dishes .card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-img-top {
+    width: unset;
+}
+
+.wrapper-dishes .card:hover .card-img-top {
+    transform: scale(1.25);
+}
+
+.box-img {
+    text-align: center;
+    padding: 20px;
+}
+
+.box-img:hover .card-img-top,
+.wrapper-banner .voucher:hover img,
+.wrapper-seafood .img-seafood:hover img,
+.wrapper-comments .img-user:hover img,
+.wrapper-introduce .img-introduce:hover img,
+.wrapper-news img:hover {
+    opacity: 0.8;
+}
+
+.card-img-top {
+    border: 10px solid #fff;
+    border-radius: 50%;
+    box-shadow: 4px 8px 10px #0003;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.wrapper-dishes .card-body {
+    padding: 0;
+}
+
+.wrapper-dishes .card-body .card-title {
+    margin-bottom: 40px;
+}
+
+.wrapper-dishes .card-body .card-title::after {
+    width: 70px;
+    border-bottom: 1px solid #b52026;
+}
+
+.wrapper-dishes .card-text,
+.wrapper-news .card-text {
+    margin-bottom: 10px !important;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.menu-btn a,
+.wrapper-introduce .btn-view-more a,
+.news-page .box-news-latest .btn-primary {
+    color: #fff;
+    background-color: #2e4f85;
+    padding: 8px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.menu-btn a:hover,
+.wrapper-introduce .btn-view-more a:hover,
+.news-page .box-news-latest .btn-primary:hover {
+    background-color: #233c64;
+}
+
+/* =================================Commnets-Wrapper======================================= */
+
+.wrapper-comments {
+    background-size: cover;
+}
+
+.wrapper-comments .comment-item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.wrapper-comments .img-user {
+    padding: 0 20px;
+}
+
+.wrapper-comments .img-user img {
+    border-radius: 50%;
+}
+
+.wrapper-comments .content .name {
+    font-size: 20px;
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 10px;
+}
+
+.wrapper-comments .content .quote-icon {
+    height: 11px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.wrapper-comments .content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.wrapper-comments .content .vote {
+    margin-bottom: 16px;
+}
+
+.wrapper-comments .content .vote i {
+    color: #b52026;
+}
+
+.wrapper-comments .content .img-another img {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+/* ===============================banner-VOUCHER===================== */
+.wrapper-banner .voucher {
+    display: block;
+}
+
+.wrapper-banner .voucher:hover img{
+    opacity: 0.8;
+}
+
+/* ====================VIDEOS-WRAPPER====================== */
+.video-item {
+    margin: 0 10px;
+}
+
+.video-item .box {
+    position: relative;
+    width: 100%;
+}
+
+.video-item .box img {
+    width: 100%;
+}
+
+.video-item .box .play-btn {
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.video-item .box:hover .play-btn {
+    transform: scale(1.4);
+}
+
+.video-item .box .video-text {
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    background-color: #2e4f85;
+    margin-bottom: 0;
+    color: #fff;
+    width: 100%;
+}
+
+.videos-list {
+    position: relative;
+    margin: 0 -10px;
+}
+
+.videos-list .slick-prev {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    font-size: 48px;
+}
+
+.videos-list .slick-next {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    font-size: 48px;
+}
+
+/* ======================Introduce-Wrapper=================================== */
+
+.wrapper-introduce .title,
+.news-page .title {
+    text-align: left;
+}
+
+.wrapper-introduce .title::after,
+.news-page .title::after {
+    left: 0;
+    transform: unset;
+}
+
+.wrapper-introduce .description p {
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #555;
+    font-size: 14px;
+}
+
+.wrapper-introduce .description p span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.wrapper-introduce .img-introduce img {
+    transition: 0.4s;
+}
+
+/* ==============================NEWS-WRAPPER======================== */
+.news-home-page {
+    background-size: cover !important;
+}
+
+.news-home-page .news-list {
+    margin: 0 -20px;
+}
+
+.news-home-page .news-item {
+    margin: 0 20px;
+}
+
+.wrapper-news .card {
+    border: none;
+    border-radius: unset;
+    margin-bottom: 40px;
+}
+
+.wrapper-news img {
+    transition: 0.4s;
+}
+
+.news-home-page .card-body {
+    padding: 10px;
+    position: relative;
+}
+
+.news-home-page .card-body .arrow-view-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 45px;
+    height: 50px;
+    background-color: #2E4F85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-news .card-title a {
+    font-size: 14px;
+    color: #2d2d2d;
+    padding: 10px 0 15px 0;
+    margin-right: 50px;
+    display: block;
+    font-weight: 700;
+}
+
+.news-home-page .btn-primary {
+    float: right;
+    color: #b52026;
+    background: unset;
+    border: none;
+    padding: 0;
+    font-style: italic;
+    font-size: 13px;
+    transition: 0.4s;
+}
+
+.news-home-page .btn-primary:hover {
+    color: #991218;
+}
+
+.news-list .slick-prev {
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    font-size: 42px;
+}
+
+.news-list .slick-next {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+    font-size: 42px;
+}
+
+/* ======================Wrapper-Mapppppppppp==================== */
+.wrapper-map iframe {
+    width: 100%;
+    height: 400px;
+}
+
 /* =============================footer=================================== */
 .footer {
-    background: url('/img/bg-footer.png') center no-repeat;
     background-size: cover;
     color: #fff;
     padding-top: 50px;
@@ -304,7 +702,75 @@ a {
     font-weight: lighter;
 }
 
+/* =====================================NEWS-PAGESsssssssss=============================================== */
+
+.news-page .news-item {
+    margin-bottom: 20px;
+}
+
+.news-page .box-news {
+    padding-right: 40px;
+}
+
+.news-page .card-body {
+    padding: 0;
+}
+
+.news-page .img-news {
+    margin-bottom: 10px;
+}
+
+.news-page .card-title a {
+    font-size: 16px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.news-page .card-text {
+    font-size: 14px;
+}
+
+.news-page .box-news-latest .card-title a {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.news-page .box-news-latest .card-text {
+    font-size: 12px;
+}
+
+.news-page .box-news-latest .btn-primary {
+    padding: 2px 10px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.news-page .arrows-news button {
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #2E4F85;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* ==================Wrapper Good-Will===================================== */
+
+.wrapper-goodwill {
+    background-color: #f2f2f2;
+}
+
 /* ========================RESPONSIVE==================== */
+@media (min-width: 1400px) {
+    .container-md {
+        max-width: 1140px;
+    }
+}
+
+
 @media screen and (max-width: 992px) {
     .header {
         background-color: #2e4f85;
@@ -327,9 +793,13 @@ a {
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .order-btn {
         display: none;
+    }
+
+    .wrapper-seafood .img-seafood {
+        margin-bottom: 20px;
     }
 
     .footer li {
