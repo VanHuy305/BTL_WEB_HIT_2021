@@ -126,13 +126,13 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  right: 0.5px;
+  right: 0;
 }
 .wowbook-gutter-shadow-right {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0.5px;
+  left: 0;
 }
 .wowbook-gutter-shadow-left {
   background: url(../../img/Huy-img/menu-img/gutter_shadow_left.png) right top
