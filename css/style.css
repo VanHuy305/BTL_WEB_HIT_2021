@@ -306,6 +306,9 @@ a {
 
 /* ========================RESPONSIVE==================== */
 @media screen and (max-width: 992px) {
+    .hidden-nav-menu {
+        display: none;
+      }
     .header {
         background-color: #2e4f85;
         position: static;
@@ -324,7 +327,6 @@ a {
     .footer .address span {
         font-size: 16px;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -335,5 +337,4 @@ a {
     .footer li {
         text-align: left !important;
     }
-
 }
