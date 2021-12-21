@@ -201,9 +201,10 @@ body {
 @media screen and (max-width: 991px) {
   .container {
     max-width: 750px;
-    height: 980px;
   }
-
+  .book {
+    margin-bottom: 60px !important;
+  }
   /* nav menu */
   .nav-tabs {
     padding-bottom: 10px !important;
@@ -255,6 +256,9 @@ body {
 @media screen and (max-width: 480px) {
   .container {
     max-width: 750px;
-    height: 970px;
+  }
+  .book {
+    padding: 10px;
+    margin-bottom: 45px !important;
   }
 }
