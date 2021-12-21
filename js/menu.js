@@ -5,6 +5,9 @@ $('.owl-carousel').owlCarousel({
     navText: ["<i class='fas fa-chevron-left'>","<i class='fas fa-chevron-right'>"],
     responsive:{
         0:{
+            items:1
+        },
+        480:{
             items:2
         },
         992:{

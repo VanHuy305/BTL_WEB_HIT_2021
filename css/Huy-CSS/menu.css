@@ -201,7 +201,7 @@ body {
 @media screen and (max-width: 991px) {
   .container {
     max-width: 750px;
-    height: 855px;
+    height: 980px;
   }
 
   /* nav menu */
@@ -250,5 +250,11 @@ body {
   /* carousel */
   .owl-nav {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 750px;
+    height: 970px;
   }
 }
