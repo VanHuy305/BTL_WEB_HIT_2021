@@ -111,14 +111,16 @@ body {
 .box-menu .img-left {
   position: relative;
   width: 50%;
+  height: 563px;
 }
 .box-menu .img-right {
   position: relative;
   width: 50%;
+  height: 563px;
 }
 .box-menu .slide-one-tab {
   left: 25%;
-  height: 561px;
+  height: 563px;
 }
 
 /* lề */
